@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Conversor de Moneda</title>
+   
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <section class="fullview">
+        <h1>Conversor de monedas Nacional</h1>
+        <div class="container">
+            <div class="form-group">
+                <h2>Pesos CLP</h2>
+                <label for="monto">Ingrese el monto en CLP:</label>
+                <input type="number" class="form-control" id="monto" placeholder="Ingrese el monto en CLP">
+            </div>
+                <h5>Moneda a convertir:</h5>
+            <div class="form-group">
+                <select class="form-control" id="moneda">
+                    <option>Seleccione moneda</option>
+                    <option>uf</option>
+                    <option>dolar</option>
+                    <option>euro</option>
+               
+                    <option>bitcoin</option>
+                </select>
+        </div>
+        <button type="button" class="btn btn-primary" onclick="renderGrafica()">Buscar</button>
+        <h5>Resultado:</h5>
+            <h1>Gráfico</h1>
+        <div class="grafic">
+            <canvas id="myChart"></canvas>
+        </div>
+        </div>
+
+
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
